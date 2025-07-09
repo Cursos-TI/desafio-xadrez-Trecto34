@@ -14,6 +14,7 @@ void bispo() {
     }
 }
 
+
 void rainha() {
     printf("-=Rainha=-\n");
     for (int i = 0; i<8; i++){
@@ -21,9 +22,27 @@ void rainha() {
     }
 }
 
+void cavalo(){
+    int baixo = 2;
+    int esquerda = 1;
+    int i = 0;
+
+    printf("-=CAVALO=-\n");
+    while (i<baixo) {
+        printf("Baixo, ");
+        i++;
+        if (i == 2) {
+            for (int j = 0; j<esquerda; j++){
+                printf("Esquerda\n");
+            }
+        }
+    }
+}
+
 int main() {
     torre();
     bispo();
     rainha();
+    cavalo();
     return 0;
 }
